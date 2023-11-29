@@ -2,9 +2,9 @@
 {
     internal class RockPainting : Speech
     {
-        private string _author;
-        private string _title;
-        private string _description;
+        private string _author; //Автор
+        private string _title;  //Название
+        private string _description;    //Описание
 
         public string Author
         {
