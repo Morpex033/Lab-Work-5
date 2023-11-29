@@ -2,7 +2,7 @@
 {
     internal class ComunicationDB
     {
-        private List<Speech> _list = new List<Speech>();
+        private List<Speech> _list = new List<Speech>(); //Массив обьектов 
 
         public List<Speech> List
         {
@@ -10,11 +10,13 @@
             set => _list = value;
         }
 
+        //Добавление елемента в массив
         public void Add(Speech entity)
         {
             List.Add(entity);
         }
 
+        //Удадение елемента из массива по id
         public void Remove(int id)
         {
 
@@ -28,11 +30,13 @@
             }
         }
 
+        //Удаление елемента из массива
         public void Remove(Speech entity)
         {
             List.Remove(entity);
         }
 
+        //Выввод массива в консоль
         public void Print()
         {
             for (int i = 0; i < List.Count; i++)
