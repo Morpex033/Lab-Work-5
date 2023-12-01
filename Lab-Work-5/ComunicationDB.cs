@@ -2,21 +2,29 @@
 {
     internal class ComunicationDB
     {
-        private List<Speech> _list = new List<Speech>(); //Массив обьектов 
+        private List<Comunication> _list = new List<Comunication>(); //Массив обьектов 
 
-        public List<Speech> List
+        public List<Comunication> List
         {
             get => _list;
             set => _list = value;
         }
 
         //Добавление елемента в массив
-        public void Add(Speech entity)
+        public void Add(Comunication entity)
         {
-            List.Add(entity);
+            try
+            {
+                List.Add(entity);
+            }
+            catch (ArgumentNullException e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
-        //Удадение елемента из массива по id
+        //Удадение елемента из массива по index
         public void Remove(int id)
         {
 
@@ -31,9 +39,18 @@
         }
 
         //Удаление елемента из массива
-        public void Remove(Speech entity)
+        public void Remove(Comunication entity)
         {
-            List.Remove(entity);
+            try
+            {
+                List.Remove(entity);
+            }
+            catch (ArgumentNullException e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+            ;
         }
 
         //Выввод массива в консоль

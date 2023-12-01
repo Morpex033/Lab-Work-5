@@ -50,7 +50,7 @@
 
         public override string ToString()
         {
-            return $"{Form}, {Participants}, {Purpose}, {Style}, {Location}";
+            return $"{Form},{Participants}, {Purpose}, {Style}, {Location}";
         }
     }
 }

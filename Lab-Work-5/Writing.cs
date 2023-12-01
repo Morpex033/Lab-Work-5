@@ -1,6 +1,6 @@
 ﻿namespace Lab_Work_5
 {
-    internal class Writing : Speech
+    internal class Writing : Comunication
     {
         private string _author; //Автор
         private string _title;  //Название

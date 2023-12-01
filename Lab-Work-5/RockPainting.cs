@@ -1,6 +1,6 @@
 ﻿namespace Lab_Work_5
 {
-    internal class RockPainting : Speech
+    internal class RockPainting : Comunication
     {
         private string _author; //Автор
         private string _title;  //Название
